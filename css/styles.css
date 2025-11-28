@@ -1,10 +1,7 @@
-/* ==============================
-    Variáveis e Reset
-============================== */
 :root {
-  --primary-color: #004d99; /* Azul Marinho mais vívido */
-  --primary-dark: #003366; /* Azul Escuro */
-  --accent-color: #00a896; /* Verde-água/Turquesa suave */
+  --primary-color: #004d99; 
+  --primary-dark: #003366; 
+  --accent-color: #00a896; 
   --text-color: #212529;
   --light-text: #495057;
   --background-light: #f9fbfc;
@@ -49,7 +46,6 @@ h1, h2, h3 {
   margin-bottom: 0.5rem;
 }
 
-/* Utilitários */
 .text-center { text-align: center; }
 .section-padding { padding: 5rem 0; }
 .bg-light { background-color: var(--background-section); }
@@ -62,18 +58,13 @@ h1, h2, h3 {
   color: var(--primary-dark);
 }
 
-/* ==============================
-    Container
-============================== */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ==============================
-    Navbar
-============================== */
+
 .navbar {
   background-color: var(--background-section);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -98,7 +89,7 @@ h1, h2, h3 {
   color: var(--primary-dark);
 }
 .logo img {
-  width: 40px; /* Tamanho da logo */
+  width: 40px; 
   height: auto;
 }
 
@@ -118,7 +109,7 @@ h1, h2, h3 {
 .nav-links li a:hover {
   color: var(--primary-color);
 }
-/* Efeito de sublinhado sutil */
+
 .nav-links li a::after {
     content: '';
     position: absolute;
@@ -138,9 +129,7 @@ h1, h2, h3 {
   margin-left: 1.5rem;
 }
 
-/* ==============================
-    Botões
-============================== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -181,9 +170,7 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 77, 153, 0.2);
 }
 
-/* ==============================
-    Hero / Boas-vindas
-============================== */
+
 .hero {
   padding: 6rem 0;
   background: linear-gradient(135deg, var(--background-light) 0%, #e0f0ff 100%);
@@ -208,9 +195,7 @@ h1, h2, h3 {
   margin: 0 0.75rem;
 }
 
-/* ==============================
-    Banner / Imagem
-============================== */
+
 .banner {
   padding: 2rem 0;
   background-color: var(--background-section);
@@ -224,9 +209,7 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* ==============================
-    Agenda
-============================== */
+
 .schedule {
   background-color: var(--background-section);
 }
@@ -269,9 +252,7 @@ h1, h2, h3 {
   margin-bottom: 0.5rem;
 }
 
-/* ==============================
-    Galeria
-============================== */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -292,9 +273,7 @@ h1, h2, h3 {
   filter: brightness(1);
 }
 
-/* ==============================
-    Localização
-============================== */
+
 .location {
   background-color: var(--background-light);
 }
@@ -337,7 +316,7 @@ h1, h2, h3 {
 .map-placeholder {
   flex: 1.5;
   min-height: 400px;
-  background-color: #e9ecef; /* Simula o mapa */
+  background-color: #e9ecef; 
   position: relative;
 }
 
@@ -358,9 +337,7 @@ h1, h2, h3 {
     font-size: 0.8rem;
 }
 
-/* ==============================
-    Footer
-============================== */
+
 .footer {
   background-color: var(--primary-dark);
   color: #fff;
@@ -399,9 +376,7 @@ h1, h2, h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ==============================
-    Responsividade
-============================== */
+
 @media (max-width: 992px) {
   .section-padding { padding: 4rem 0; }
   .location-content { flex-direction: column; }
