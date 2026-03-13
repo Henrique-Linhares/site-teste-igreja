@@ -6,46 +6,53 @@
   <title>AD Brás Belvedere - Comunidade de Fé</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar relative">
     <div class="container navbar-content">
-      <div class="logo">
-        <img src="assets/img/logo.png" alt="logo" style="width: 90px;">
-        <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23004d99'/%3E%3Cpath d='M50 20 L60 45 L50 40 L40 45 Z M30 50 L70 50 M50 50 L50 80' stroke='white' stroke-width='4' fill='none'/%3E%3C/svg%3E" alt="Logo" /> -->
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.png" alt="logo" style="width: 50px;">
         <span>AD Brás Belvedere</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#galeria">Galeria</a></li>
+      </a>
+      
+      <!-- Hamburger Menu Button for Mobile -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#agenda">Agenda</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="index.html#galeria">Galeria</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </div>
   </nav>
 
-<section class="hero" id="inicio">
-  <div class="hero-parallax-bg"></div>
-  
-  <div class="hero-content">
-    <h1 class="subtitle-hero">Bem-vindo à Nossa Comunidade</h1>
-    <p class="subtitle-hero">Um lugar para adorar, servir e crescer em fé e comunhão. Participe dos nossos encontros e experimente o amor de Deus.</p>
-    <div class="hero-buttons">
-      <a href="#agenda" class="btn btn-primary">
-        <i class="fas fa-calendar-alt"></i>
-        <span>Próximos Eventos</span>
-      </a>
+  <section class="hero" id="inicio">
+    <div class="hero-parallax-bg"></div>
+    <div class="hero-content">
+      <h1>Bem-vindo à Nossa Comunidade</h1>
+      <p class="subtitle-hero">Um lugar para adorar, servir e crescer em fé e comunhão. Participe dos nossos encontros e experimente o amor de Deus.</p>
+      <div class="hero-buttons">
+        <a href="#agenda" class="btn btn-primary">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Próximos Eventos</span>
+        </a>
+        <a href="missoes.html" class="btn btn-gold">
+          <i class="fas fa-globe-americas"></i>
+          <span>Projeto Missões</span>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="features" id="sobre">
     <div class="container">
@@ -54,49 +61,37 @@
       
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-hands-praying"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-hands-praying"></i></div>
           <h3>Adoração Genuína</h3>
           <p>Experimente momentos de louvor autêntico onde a presença de Deus se manifesta de forma poderosa e transformadora.</p>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-book-open"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-book-open"></i></div>
           <h3>Ensino Bíblico</h3>
           <p>Aprofunde-se na Palavra através de estudos relevantes e aplicáveis ao seu dia a dia, fortalecendo sua fé.</p>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-users"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
           <h3>Comunhão Verdadeira</h3>
           <p>Faça parte de uma família espiritual que se importa, apoia e caminha junto em todas as estações da vida.</p>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-child"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-child"></i></div>
           <h3>Ministério Infantil</h3>
           <p>Espaço seguro e divertido onde as crianças aprendem sobre Deus de forma lúdica e apropriada para cada idade.</p>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-hands-helping"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-hands-helping"></i></div>
           <h3>Ação Social</h3>
-          <p>Participe de projetos que transformam vidas e levam esperança para comunidades em situação de vulnerabilidade.</p>
+          <p>Participe de projetos que transformam vidas e levam esperança para comunidades vulneráveis.</p>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-music"></i>
-          </div>
+          <div class="feature-icon"><i class="fas fa-music"></i></div>
           <h3>Ministério de Louvor</h3>
           <p>Junte-se ao nosso time de louvor e use seus talentos musicais para glorificar a Deus e abençoar vidas.</p>
         </div>
@@ -135,7 +130,7 @@
         <div class="testimonial-card">
           <p class="testimonial-text">"O acolhimento que recebi desde o primeiro dia foi incrível. Aqui me sinto em casa e parte de algo maior."</p>
           <div class="testimonial-author">
-            <div class="author-avatar">A</div>
+            <div class="author-avatar">S</div>
             <div class="author-info">
               <h4>Sirlene Bertogo</h4>
               <p>Membro há 2 anos</p>
@@ -146,54 +141,42 @@
     </div>
   </section>
 
+  <!-- Photo Carousel using Swiper.js -->
   <section class="photo-carousel">
     <div class="container">
-      <h2 class="section-title">Nossa Comunidade em Imagens</h2>
+      <h2 class="section-title">Nossa Comunidade</h2>
       <p class="section-subtitle">Momentos que marcam nossa jornada de fé</p>
       
       <div class="carousel-container">
-        <div class="carousel-track">
-          <div class="carousel-photo">
-            <img src="assets/img/ceia-6.jpg" alt="Momento 1" />
-            <div class="photo-caption">Culto de Ceia</div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/ceia-6.jpg" alt="Culto de Ceia" />
+              <div class="photo-caption">Culto de Ceia</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/culto-1.jpg" alt="Comunhão" />
+              <div class="photo-caption">Comunhão entre Irmãos</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/louvor-1.jpg" alt="Louvor" />
+              <div class="photo-caption">Ministério de Louvor</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/celebração.jpg" alt="Celebração" />
+              <div class="photo-caption">Celebração Especial</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/ebd.jpeg" alt="Oração" />
+              <div class="photo-caption">Momentos de Oração</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/ceia-3.jpg" alt="Santa Ceia" />
+              <div class="photo-caption">Santa Ceia</div>
+            </div>
           </div>
-          <div class="carousel-photo">
-            <img src="assets/img/culto-1.jpg" alt="Momento 2" />
-            <div class="photo-caption">Comunhão entre Irmãos</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/louvor-1.jpg" alt="Momento 3" />
-            <div class="photo-caption">Ministério de Louvor</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/celebração.jpg" alt="Momento 4" />
-            <div class="photo-caption">Celebração Especial</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/ebd.jpeg" alt="Momento 5" />
-            <div class="photo-caption">Momentos de Oração</div>
-          </div>
-          <!-- Duplicando para loop infinito -->
-        <div class="carousel-photo">
-            <img src="assets/img/ceia-6.jpg" alt="Momento 1" />
-            <div class="photo-caption">Culto de Ceia</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/culto-1.jpg" alt="Momento 2" />
-            <div class="photo-caption">Comunhão entre Irmãos</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/louvor-1.jpg" alt="Momento 3" />
-            <div class="photo-caption">Ministério de Louvor</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/celebração.jpg" alt="Momento 4" />
-            <div class="photo-caption">Celebração Especial</div>
-          </div>
-          <div class="carousel-photo">
-            <img src="assets/img/ebd.jpeg" alt="Momento 5" />
-            <div class="photo-caption">Momentos de Oração</div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -202,33 +185,33 @@
   <section class="schedule" id="agenda">
     <div class="container">
       <h2 class="section-title">Nossa Agenda Semanal</h2>
-      <p class="section-subtitle">Participe dos nossos encontros e fortaleça sua fé em comunidade</p>
+      <p class="section-subtitle">Participe dos nossos encontros e fortaleça sua fé</p>
       
       <div class="schedule-grid">
         <div class="schedule-item">
           <i class="fas fa-cross"></i>
           <h3>Culto de Libertação</h3>
           <span class="time">Terças-feiras, 19:30h</span>
-          <p>Momento especial de libertação e cura espiritual, onde oramos e buscamos a renovação através do poder de Deus.</p>
+          <p>Momento especial de libertação e cura espiritual, orando e buscando renovação através de Deus.</p>
         </div>
         
         <div class="schedule-item">
           <i class="fas fa-bible"></i>
           <h3>Culto de Ensino</h3>
           <span class="time">Quintas-feiras, 19:30h</span>
-          <p>Aprofunde-se na Palavra de Deus com estudos bíblicos relevantes que transformam vidas e fortalecem a fé.</p>
+          <p>Aprofunde-se na Palavra com estudos bíblicos que transformam vidas e fortalecem a nossa base.</p>
         </div>
         
         <div class="schedule-item">
           <i class="fas fa-praying-hands"></i>
           <h3>Culto da Família</h3>
           <span class="time">Domingos, 18:30h</span>
-          <p>Celebração especial para toda a família, com louvor vibrante, palavra inspiradora e comunhão entre irmãos.</p>
+          <p>Celebração para a família, com louvor vibrante, palavra inspiradora e comunhão verdadeira.</p>
         </div>
       </div>
       
       <div class="text-center mt-3">
-        <a href="#contato" class="btn btn-primary">
+        <a href="#contato" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">
           <i class="fas fa-calendar-plus"></i>
           <span>Venha nos Conhecer</span>
         </a>
@@ -238,11 +221,11 @@
 
   <section class="cta-section">
     <div class="cta-content">
-      <h2>Dê o Próximo Passo na Sua Jornada Espiritual</h2>
+      <h2>Dê o Próximo Passo</h2>
       <p>Você está convidado a fazer parte desta família. Venha nos conhecer e experimente o amor transformador de Cristo.</p>
       <a href="#contato" class="btn btn-outline">
         <i class="fas fa-envelope"></i>
-        <span class="title-contato">Entre em Contato</span>
+        <span>Entre em Contato</span>
       </a>
     </div>
   </section>
@@ -250,14 +233,13 @@
   <section class="gallery" id="galeria">
     <div class="container">
       <h2 class="section-title">Momentos Especiais</h2>
-      <p class="section-subtitle">Confira registros dos nossos cultos e eventos</p>
+      <p class="section-subtitle">Confira registros dos nossos eventos</p>
       
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="assets/img/louvor-1.jpg" alt="Culto" />
           <div class="gallery-overlay">
             <h4>Culto de Louvor</h4>
-            <a href="https://www.instagram.com/adbras_belvedere/"></a>
           </div>
         </div>
         
@@ -265,15 +247,13 @@
           <img src="assets/img/ceia-3.jpg" alt="Ceia" />
           <div class="gallery-overlay">
             <h4>Santa Ceia</h4>
-            <a href="https://www.instagram.com/adbras_belvedere/"></a>
           </div>
         </div>
         
         <div class="gallery-item">
           <img src="assets/img/ebd.jpeg" alt="EBD" />
           <div class="gallery-overlay">
-            <h4>Escola Bíblica Dominical</h4>
-            <a href="https://www.instagram.com/adbras_belvedere/"></a>
+            <h4>Escola Dominical</h4>
           </div>
         </div>
         
@@ -283,7 +263,6 @@
             <h4>Ministério Infantil</h4>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -295,56 +274,35 @@
           <h3>AD Brás Belvedere</h3>
           <p>Uma comunidade que vive e compartilha o amor de Cristo, transformando vidas através da fé.</p>
           <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100090555102234" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/adbras_belvedere/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100090555102234" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/adbras_belvedere/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         
         <div class="footer-section">
           <h3>Contato</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Rua Luiz Arnaldo Wenzel, 199</p>
-          <p>Jardim Social Belvedere - São Carlos/SP</p>
-          <p><i class="fas fa-envelope"></i> belvederemidia@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Rua Luiz Arnaldo Wenzel, 199</p>
+          <p style="padding-left: 24px;">Jardim Social Belvedere - São Carlos/SP</p>
+          <p><i class="fas fa-envelope" style="margin-right: 8px;"></i>belvederemidia@gmail.com</p>
         </div>
         
         <div class="footer-section">
           <h3>Links Rápidos</h3>
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre Nós</a>
-          <a href="#agenda">Nossa Agenda</a>
-          <a href="#galeria">Galeria</a>
-          <a href="https://www.google.com/maps/place/Igreja+Assembl%C3%A9ia+De+Deus/@-22.0404137,-47.9033402,20.46z/data=!4m6!3m5!1s0x94b87772c2842bb9:0xf224e3ea517da3e7!8m2!3d-22.0402021!4d-47.9032332!16s%2Fg%2F11hbgjg4bv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Como Chegar</a>
+          <a href="#inicio"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Início</a>
+          <a href="#sobre"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Sobre Nós</a>
+          <a href="missoes.html"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Missões</a>
+          <a href="https://www.google.com/maps/place/Igreja+Assembl%C3%A9ia+De+Deus/@-22.0404137,-47.9033402,20.46z/data=!4m6!3m5!1s0x94b87772c2842bb9:0xf224e3ea517da3e7!8m2!3d-22.0402021!4d-47.9032332!16s%2Fg%2F11hbgjg4bv" target="_blank">
+            <i class="fas fa-angle-right" style="margin-right: 5px;"></i>Como Chegar
+          </a>
         </div>
       </div>
-      
       <p class="copyright">&copy; 2026 AD Brás Belvedere. Todos os direitos reservados. Desenvolvido para a glória de Deus.</p>
     </div>
   </footer>
 
-  <script>
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-  </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/scripts.js"></script>
 </body>
-</html
+</html>
