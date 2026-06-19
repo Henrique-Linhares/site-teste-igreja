@@ -1,308 +1,812 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AD Brás Belvedere - Comunidade de Fé</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-</head>
-<body>
-  <nav class="navbar relative">
-    <div class="container navbar-content">
-      <a href="index.html" class="logo">
-        <img src="assets/img/logo.png" alt="logo" style="width: 50px;">
-        <span>AD Brás Belvedere</span>
-      </a>
-      
-      <!-- Hamburger Menu Button for Mobile -->
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
-        <i class="fas fa-bars"></i>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AD Brás Belvedere — Assembleia de Deus</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo.png"
+      type="image/x-icon"
+      style="width: 20px"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Bem-vindo à AD Brás Belvedere — uma Igreja Família que ama a Jesus e leva Deus a sério. Venha nos visitar. Cultos aos domingos e durante a semana."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="AD Brás Belvedere — Assembleia de Deus"
+    />
+    <meta
+      property="og:description"
+      content="Uma Igreja Família que ama a Jesus e leva Deus a sério. Venha nos visitar."
+    />
+    <meta property="og:type" content="website" />
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html#inicio">Início</a></li>
-        <li><a href="index.html#sobre">Sobre</a></li>
-        <li><a href="index.html#agenda">Agenda</a></li>
-        <li><a href="missoes.html">Missões</a></li>
-        <li><a href="index.html#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <section class="hero" id="inicio">
-    <div class="hero-parallax-bg"></div>
-    <div class="hero-content">
-      <h1>Bem-vindo à Nossa Comunidade</h1>
-      <p class="subtitle-hero">Um lugar para adorar, servir e crescer em fé e comunhão. Participe dos nossos encontros e experimente o amor de Deus.</p>
-      <div class="hero-buttons">
-        <a href="#agenda" class="btn btn-primary">
-          <i class="fas fa-calendar-alt"></i>
-          <span>Próximos Eventos</span>
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a href="#" class="nav__logo" aria-label="AD Brás Belvedere — Início">
+          <div class="logo-emblem" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="Logo AD Brás Belvedere" />
+          </div>
+          <div class="logo-text">
+            <span class="logo-text__main">AD Brás</span>
+            <span class="logo-text__sub">Belvedere</span>
+          </div>
         </a>
-        <a href="missoes.html" class="btn btn-gold">
-          <i class="fas fa-globe-americas"></i>
-          <span>Projeto Missões</span>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <section class="features" id="sobre">
-    <div class="container">
-      <h2 class="section-title">Por Que Nos Visitar?</h2>
-      <p class="section-subtitle">Descubra uma comunidade acolhedora onde você pode crescer espiritualmente</p>
-      
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-hands-praying"></i></div>
-          <h3>Adoração Genuína</h3>
-          <p>Experimente momentos de louvor autêntico onde a presença de Deus se manifesta de forma poderosa e transformadora.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-book-open"></i></div>
-          <h3>Ensino Bíblico</h3>
-          <p>Aprofunde-se na Palavra através de estudos relevantes e aplicáveis ao seu dia a dia, fortalecendo sua fé.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-users"></i></div>
-          <h3>Comunhão Verdadeira</h3>
-          <p>Faça parte de uma família espiritual que se importa, apoia e caminha junto em todas as estações da vida.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-child"></i></div>
-          <h3>Ministério Infantil</h3>
-          <p>Espaço seguro e divertido onde as crianças aprendem sobre Deus de forma lúdica e apropriada para cada idade.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-hands-helping"></i></div>
-          <h3>Ação Social</h3>
-          <p>Participe de projetos que transformam vidas e levam esperança para comunidades vulneráveis.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-music"></i></div>
-          <h3>Ministério de Louvor</h3>
-          <p>Junte-se ao nosso time de louvor e use seus talentos musicais para glorificar a Deus e abençoar vidas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <ul class="nav__links" role="list">
+          <li><a href="#cultos" class="nav__link">Cultos</a></li>
+          <li><a href="#ministerios" class="nav__link">Ministérios</a></li>
+          <li><a href="#palavra" class="nav__link">Palavra</a></li>
+          <li>
+            <a href="#testemunhos" class="nav__link">Experiências Reais</a>
+          </li>
+          <li><a href="#como-chegar" class="nav__link">Como chegar</a></li>
+        </ul>
 
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-title">Experiências Reais</h2>
-      <p class="section-subtitle">Veja o que nossos membros têm a dizer sobre nossa comunidade</p>
-      
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p class="testimonial-text">"Encontrei mais do que uma igreja, encontrei uma família. Os cultos são cheios de vida e a Palavra é pregada com poder e amor."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">A</div>
-            <div class="author-info">
-              <h4>Aline Theodoro</h4>
-              <p>Membro há 3 anos</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <p class="testimonial-text">"Minha vida foi transformada aqui. O ensino bíblico me ajudou a crescer espiritualmente e a enfrentar desafios com fé."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">D</div>
-            <div class="author-info">
-              <h4>Denis Francisco</h4>
-              <p>Membro há 3 anos</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <p class="testimonial-text">"O acolhimento que recebi desde o primeiro dia foi incrível. Aqui me sinto em casa e parte de algo maior."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">S</div>
-            <div class="author-info">
-              <h4>Sirlene Bertogo</h4>
-              <p>Membro há 2 anos</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Photo Carousel using Swiper.js -->
-  <section class="photo-carousel">
-    <div class="container">
-      <h2 class="section-title">Nossa Comunidade</h2>
-      <p class="section-subtitle">Momentos que marcam nossa jornada de fé</p>
-      
-      <div class="carousel-container">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/img/ceia-6.jpg" alt="Culto de Ceia" />
-              <div class="photo-caption">Culto de Ceia</div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/culto-1.jpg" alt="Comunhão" />
-              <div class="photo-caption">Comunhão entre Irmãos</div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/louvor-1.jpg" alt="Louvor" />
-              <div class="photo-caption">Ministério de Louvor</div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/celebração.jpg" alt="Celebração" />
-              <div class="photo-caption">Celebração Especial</div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/ebd.jpeg" alt="Oração" />
-              <div class="photo-caption">Momentos de Oração</div>
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/ceia-3.jpg" alt="Santa Ceia" />
-              <div class="photo-caption">Santa Ceia</div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="schedule" id="agenda">
-    <div class="container">
-      <h2 class="section-title">Nossa Agenda Semanal</h2>
-      <p class="section-subtitle">Participe dos nossos encontros e fortaleça sua fé</p>
-      
-      <div class="schedule-grid">
-        <div class="schedule-item">
-          <i class="fas fa-cross"></i>
-          <h3>Culto de Libertação</h3>
-          <span class="time">Terças-feiras, 19:30h</span>
-          <p>Momento especial de libertação e cura espiritual, orando e buscando renovação através de Deus.</p>
-        </div>
-        
-        <div class="schedule-item">
-          <i class="fas fa-bible"></i>
-          <h3>Culto de Ensino</h3>
-          <span class="time">Quintas-feiras, 19:30h</span>
-          <p>Aprofunde-se na Palavra com estudos bíblicos que transformam vidas e fortalecem a nossa base.</p>
-        </div>
-        
-        <div class="schedule-item">
-          <i class="fas fa-praying-hands"></i>
-          <h3>Culto da Família</h3>
-          <span class="time">Domingos, 18:30h</span>
-          <p>Celebração para a família, com louvor vibrante, palavra inspiradora e comunhão verdadeira.</p>
-        </div>
-      </div>
-      
-      <div class="text-center mt-3">
-        <a href="#contato" class="btn btn-outline" style="border-color: var(--primary); color: var(--primary);">
-          <i class="fas fa-calendar-plus"></i>
-          <span>Venha nos Conhecer</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2>Dê o Próximo Passo</h2>
-      <p>Você está convidado a fazer parte desta família. Venha nos conhecer e experimente o amor transformador de Cristo.</p>
-      <a href="#contato" class="btn btn-outline">
-        <i class="fas fa-envelope"></i>
-        <span>Entre em Contato</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="gallery" id="galeria">
-    <div class="container">
-      <h2 class="section-title">Momentos Especiais</h2>
-      <p class="section-subtitle">Confira registros dos nossos eventos</p>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="assets/img/louvor-1.jpg" alt="Culto" />
-          <div class="gallery-overlay">
-            <h4>Culto de Louvor</h4>
-          </div>
-        </div>
-        
-        <div class="gallery-item">
-          <img src="assets/img/ceia-3.jpg" alt="Ceia" />
-          <div class="gallery-overlay">
-            <h4>Santa Ceia</h4>
-          </div>
-        </div>
-        
-        <div class="gallery-item">
-          <img src="assets/img/ebd.jpeg" alt="EBD" />
-          <div class="gallery-overlay">
-            <h4>Escola Dominical</h4>
-          </div>
-        </div>
-        
-        <div class="gallery-item">
-          <img src="assets/img/crianças-1.jpg" alt="Infantil" />
-          <div class="gallery-overlay">
-            <h4>Ministério Infantil</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer" id="contato">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>AD Brás Belvedere</h3>
-          <p>Uma comunidade que vive e compartilha o amor de Cristo, transformando vidas através da fé.</p>
-          <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100090555102234" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/adbras_belvedere/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Contato</h3>
-          <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Rua Luiz Arnaldo Wenzel, 199</p>
-          <p style="padding-left: 24px;">Jardim Social Belvedere - São Carlos/SP</p>
-          <p><i class="fas fa-envelope" style="margin-right: 8px;"></i>belvederemidia@gmail.com</p>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Links Rápidos</h3>
-          <a href="#inicio"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Início</a>
-          <a href="#sobre"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Sobre Nós</a>
-          <a href="missoes.html"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Missões</a>
-          <a href="https://www.google.com/maps/place/Igreja+Assembl%C3%A9ia+De+Deus/@-22.0404137,-47.9033402,20.46z/data=!4m6!3m5!1s0x94b87772c2842bb9:0xf224e3ea517da3e7!8m2!3d-22.0402021!4d-47.9032332!16s%2Fg%2F11hbgjg4bv" target="_blank">
-            <i class="fas fa-angle-right" style="margin-right: 5px;"></i>Como Chegar
+        <div class="nav__actions">
+          <a href="#como-chegar" class="btn btn--gold btn--sm">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            Visitar
           </a>
         </div>
-      </div>
-      <p class="copyright">&copy; 2026 AD Brás Belvedere. Todos os direitos reservados. Desenvolvido para a glória de Deus.</p>
-    </div>
-  </footer>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Custom Script -->
-  <script src="js/scripts.js"></script>
-</body>
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menu"
+        >
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </nav>
+
+      <div
+        class="mobile-menu"
+        id="mobile-menu"
+        role="dialog"
+        aria-label="Menu de navegação"
+        hidden
+      >
+        <ul class="mobile-menu__links" role="list">
+          <li><a href="#cultos" class="mobile-menu__link">Cultos</a></li>
+          <li>
+            <a href="#ministerios" class="mobile-menu__link">Ministérios</a>
+          </li>
+          <li><a href="#palavra" class="mobile-menu__link">Palavra</a></li>
+          <li>
+            <a href="#testemunhos" class="mobile-menu__link"
+              >Experiências Reais</a
+            >
+          </li>
+          <li>
+            <a href="#como-chegar" class="mobile-menu__link">Como chegar</a>
+          </li>
+          <li>
+            <a href="#como-chegar" class="btn btn--gold w-full">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              Quero visitar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__video-bg" aria-hidden="true">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="assets/media/202606191740.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__video-overlay"></div>
+          <div class="hero__video-vignette"></div>
+        </div>
+
+        <div class="hero__bg-texture" aria-hidden="true"></div>
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__quote-mark" aria-hidden="true">"</div>
+
+          <div class="hero__content">
+            <p class="hero__verse-ref">João 3:16</p>
+
+            <h1 id="hero-heading" class="hero__title">
+              Porque Deus amou<br />
+              <em>o mundo de tal maneira</em><br />
+              que deu o seu Filho<br />
+              <em>unigênito.</em>
+            </h1>
+
+            <p class="hero__subtitle">
+              Uma Igreja Família que ama a Jesus e leva Deus a sério.<br />
+              Você é esperado aqui.
+            </p>
+
+            <div class="hero__ctas">
+              <a href="#cultos" class="btn btn--gold btn--lg">
+                Ver horários dos cultos
+                <i data-lucide="calendar" aria-hidden="true"></i>
+              </a>
+              <a href="#como-chegar" class="btn btn--ghost btn--lg">
+                Como chegar
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <div
+        class="verse-band"
+        role="complementary"
+        aria-label="Versículo em destaque"
+      >
+        <div class="verse-band__track">
+          <span>"O Senhor é o meu pastor e nada me faltará." — Sl 23.1</span>
+          <span aria-hidden="true">✦</span>
+          <span>"Tudo posso naquele que me fortalece." — Fp 4.13</span>
+          <span aria-hidden="true">✦</span>
+          <span>"Buscai primeiro o reino de Deus." — Mt 6.33</span>
+          <span aria-hidden="true">✦</span>
+          <span>"O Senhor é o meu pastor e nada me faltará." — Sl 23.1</span>
+          <span aria-hidden="true">✦</span>
+          <span>"Tudo posso naquele que me fortalece." — Fp 4.13</span>
+          <span aria-hidden="true">✦</span>
+          <span>"Buscai primeiro o reino de Deus." — Mt 6.33</span>
+          <span aria-hidden="true">✦</span>
+        </div>
+      </div>
+
+      <section class="cultos" id="cultos" aria-labelledby="cultos-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Programação</p>
+            <h2 id="cultos-heading" class="section-title">
+              Você tem um lugar<br />reservado aqui.
+            </h2>
+            <p class="section-subtitle">
+              Não importa quem você é ou de onde vem — nossa porta está aberta.
+            </p>
+          </div>
+
+          <div class="cultos__grid">
+            <article class="culto-card culto-card--destaque">
+              <div class="culto-card__day">Domingo</div>
+              <div class="culto-card__icon" aria-hidden="true">
+                <i data-lucide="users"></i>
+              </div>
+              <h3 class="culto-card__name">Culto da Família</h3>
+              <p class="culto-card__time">
+                <i data-lucide="clock" aria-hidden="true"></i>
+                18h30
+              </p>
+              <p class="culto-card__desc">
+                O principal culto da semana. Momento de adoração, Palavra e
+                comunhão para toda a família.
+              </p>
+            </article>
+
+            <article class="culto-card">
+              <div class="culto-card__day">Terça</div>
+              <div class="culto-card__icon" aria-hidden="true">
+                <i data-lucide="music-4"></i>
+              </div>
+              <h3 class="culto-card__name">Culto Avivados Pela Palavra</h3>
+              <p class="culto-card__time">
+                <i data-lucide="clock" aria-hidden="true"></i>
+                19h30
+              </p>
+              <p class="culto-card__desc">
+                Uma noite especial dedicada à intercessão, ao clamor e à busca
+                pela presença de Deus.
+              </p>
+            </article>
+
+            <article class="culto-card">
+              <div class="culto-card__day">Quinta</div>
+              <div class="culto-card__icon" aria-hidden="true">
+                <i data-lucide="book-open"></i>
+              </div>
+              <h3 class="culto-card__name">Culto de Ensino</h3>
+              <p class="culto-card__time">
+                <i data-lucide="clock" aria-hidden="true"></i>
+                19h30
+              </p>
+              <p class="culto-card__desc">
+                Aprofundamento bíblico e doutrinário para crescer no
+                conhecimento da Palavra de Deus.
+              </p>
+            </article>
+
+            <article class="culto-card">
+              <div class="culto-card__day">Domingo de Manhã</div>
+              <div class="culto-card__icon" aria-hidden="true">
+                <i data-lucide="heart-handshake"></i>
+              </div>
+              <h3 class="culto-card__name">Escola Biblica Dominical</h3>
+              <p class="culto-card__time">
+                <i data-lucide="clock" aria-hidden="true"></i>
+                19h30
+              </p>
+              <p class="culto-card__desc">
+                Uma manhã edificante de comunhão entre os irmaõs e aprendizado
+                sobre a palavra do Senhor.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="ministerios"
+        id="ministerios"
+        aria-labelledby="ministerios-heading"
+      >
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Ministérios</p>
+            <h2 id="ministerios-heading" class="section-title">
+              Cada pessoa tem<br />um chamado.
+            </h2>
+            <p class="section-subtitle">
+              Temos ministérios para cada fase da vida — porque a Igreja é para
+              todos.
+            </p>
+          </div>
+
+          <div class="ministerios__grid">
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="baby"></i>
+              </div>
+              <h3>Ministério Infantil</h3>
+              <p>
+                Crianças de 0 a 8 anos aprendem sobre Deus de forma divertida e
+                segura, com educadores dedicados.
+              </p>
+            </article>
+
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="zap"></i>
+              </div>
+              <h3>Geração de Adoradores</h3>
+              <p>
+                O espaço dos adolescentes que estão descobrindo quem são — e
+                quem Deus é. Uma comunidade que caminha junto nessa fase única,
+                com identidade, propósito e muito pertencimento.
+              </p>
+            </article>
+
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="home"></i>
+              </div>
+              <h3>Geração Eleita</h3>
+              <p>
+                Fortalecimento de lares com a Palavra. Aconselhamento, eventos e
+                cuidado para famílias.
+              </p>
+            </article>
+
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="users-round"></i>
+              </div>
+              <h3>Coluna de Fogo</h3>
+              <p>
+                Aliança de mulheres que se apoiam, oram juntas e crescem na fé,
+                no caráter e no propósito.
+              </p>
+            </article>
+
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="shield"></i>
+              </div>
+              <h3>Departamento de Varões</h3>
+              <p>
+                Homens que buscam ser líderes íntegros — na família, na igreja e
+                na sociedade.
+              </p>
+            </article>
+
+            <article class="ministerio-card">
+              <div class="ministerio-card__icon" aria-hidden="true">
+                <i data-lucide="globe-2"></i>
+              </div>
+              <h3>Departamento de Missões</h3>
+              <p>
+                Obedecer ao "ide" de Jesus, levando a Palavra a todos os povos —
+                perto e longe.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="palavra" id="palavra" aria-labelledby="palavra-heading">
+        <div class="container palavra__inner">
+          <div class="palavra__content">
+            <p class="section-eyebrow">Palavra da semana</p>
+            <h2 id="palavra-heading" class="palavra__title">
+              "Vinde a mim, todos os que estais cansados e sobrecarregados,<br />
+              e eu vos aliviarei."
+            </h2>
+            <p class="palavra__ref">Mateus 11:28</p>
+            <p class="palavra__body">
+              Independente de tudo que você está enfrentando hoje — o Senhor
+              Jesus está de portas abertas. Esta é a mensagem central da AD Brás
+              Belvedere: em Cristo há descanso, restauração e nova vida para
+              todos.
+            </p>
+            <a
+              href="#cultos"
+              class="btn btn--gold btn--lg"
+              style="margin-top: 2rem"
+            >
+              Venha ouvir a Palavra
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <aside class="congregacao-stats" aria-label="Números da congregação">
+            <div class="stat-item">
+              <strong>1938</strong>
+              <span>Fundação do Ministério do Brás em SP</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong>+500k</strong>
+              <span>Membros no Ministério de Madureira</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong>4</strong>
+              <span>Cultos por semana na Belvedere</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong>100%</strong>
+              <span>Bem-vindo, independente da sua história</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="testemunhos"
+        id="testemunhos"
+        aria-labelledby="testemunhos-heading"
+      >
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Experiências Reais</p>
+            <h2 id="testemunhos-heading" class="section-title">
+              O que Deus tem feito<br />em nossas vidas.
+            </h2>
+          </div>
+
+          <div class="testemunhos__grid">
+            <article class="testemunho-card testemunho-card--destaque">
+              <div class="testemunho-card__quote" aria-hidden="true">"</div>
+              <blockquote>
+                <p>
+                  "Encontrei mais do que uma igreja, encontrei uma família. Os
+                  cultos são cheios de vida e a Palavra é pregada com poder e
+                  amor."
+                </p>
+              </blockquote>
+              <footer class="testemunho-card__author">
+                <div class="testemunho-avatar av1" aria-hidden="true">AT</div>
+                <div>
+                  <strong>Aline Theodoro</strong>
+                  <span>Membro há 4 anos</span>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testemunho-card">
+              <div class="testemunho-card__quote" aria-hidden="true">"</div>
+              <blockquote>
+                <p>
+                  "Minha vida foi transformada aqui. O ensino bíblico me ajudou
+                  a crescer espiritualmente e a enfrentar desafios com fé."
+                </p>
+              </blockquote>
+              <footer class="testemunho-card__author">
+                <div class="testemunho-avatar av2" aria-hidden="true">DF</div>
+                <div>
+                  <strong>Denis Francisco</strong>
+                  <span>Membro há 4 anos</span>
+                </div>
+              </footer>
+            </article>
+
+            <article class="testemunho-card">
+              <div class="testemunho-card__quote" aria-hidden="true">"</div>
+              <blockquote>
+                <p>
+                  "O acolhimento que recebi desde o primeiro dia foi incrível.
+                  Aqui me sinto em casa e parte de algo maior."
+                </p>
+              </blockquote>
+              <footer class="testemunho-card__author">
+                <div class="testemunho-avatar av3" aria-hidden="true">SB</div>
+                <div>
+                  <strong>Sirlene Bertogo</strong>
+                  <span>Membros há 3 anos</span>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-heading">
+        <div class="container faq__inner">
+          <div class="faq__header">
+            <p class="section-eyebrow">Dúvidas</p>
+            <h2 id="faq-heading" class="section-title">
+              Primeira vez?<br />Sem problema.
+            </h2>
+            <p class="section-subtitle">
+              Respondemos as perguntas mais comuns de quem está chegando pela
+              primeira vez.
+            </p>
+          </div>
+
+          <div class="accordion" role="list">
+            <div class="accordion__item" role="listitem">
+              <button
+                class="accordion__trigger"
+                aria-expanded="false"
+                aria-controls="faq-1"
+              >
+                Nunca fui a uma igreja. Posso aparecer assim mesmo?
+                <i
+                  data-lucide="chevron-down"
+                  class="accordion__icon"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="accordion__body" id="faq-1" hidden>
+                <p>
+                  Pode e deve. Não precisa ter história religiosa, não precisa
+                  saber as músicas, não precisa entender nada ainda. Nossa porta
+                  está aberta exatamente para quem está chegando do zero — é pra
+                  você que a gente existe.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item" role="listitem">
+              <button
+                class="accordion__trigger"
+                aria-expanded="false"
+                aria-controls="faq-3"
+              >
+                Preciso me vestir de uma forma específica?
+                <i
+                  data-lucide="chevron-down"
+                  class="accordion__icon"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="accordion__body" id="faq-3" hidden>
+                <p>
+                  Valorizamos o respeito, mas o mais importante é que você
+                  apareça. Venha como estiver — Deus não olha a roupa, Ele olha
+                  o coração. E nós também.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item" role="listitem">
+              <button
+                class="accordion__trigger"
+                aria-expanded="false"
+                aria-controls="faq-4"
+              >
+                Posso trazer meus filhos? Tem algo para eles durante o culto?
+                <i
+                  data-lucide="chevron-down"
+                  class="accordion__icon"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="accordion__body" id="faq-4" hidden>
+                <p>
+                  Temos o Ministério Infantil para crianças de 0 a 8 anos — com
+                  educadores treinados, ambiente seguro e atividades que ensinam
+                  sobre Deus de forma divertida. Enquanto você está no culto,
+                  seus filhos estão sendo cuidados e bem acompanhados.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item" role="listitem">
+              <button
+                class="accordion__trigger"
+                aria-expanded="false"
+                aria-controls="faq-5"
+              >
+                Vão me pedir dinheiro ou me pressionar a algo?
+                <i
+                  data-lucide="chevron-down"
+                  class="accordion__icon"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="accordion__body" id="faq-5" hidden>
+                <p>
+                  Nunca. Oferta na Bíblia é um ato voluntário de adoração — não
+                  uma cobrança. Nenhum visitante é abordado, pressionado ou
+                  constrangido de nenhuma forma. Venha só para conhecer, sem
+                  compromisso nenhum.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item" role="listitem">
+              <button
+                class="accordion__trigger"
+                aria-expanded="false"
+                aria-controls="faq-6"
+              >
+                E se eu tiver passado por coisas muito difíceis na vida?
+                <i
+                  data-lucide="chevron-down"
+                  class="accordion__icon"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              <div class="accordion__body" id="faq-6" hidden>
+                <p>
+                  Essa é exatamente a pessoa que Jesus chamou. Não existe
+                  história pesada demais, passado complicado demais ou vida
+                  quebrada demais para o cuidado de Deus. A AD Brás Belvedere é
+                  uma família que já recebeu e acolheu muita gente que chegou
+                  sem esperança — e viu tudo mudar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="como-chegar"
+        id="como-chegar"
+        aria-labelledby="chegar-heading"
+      >
+        <div class="container como-chegar__inner">
+          <div class="como-chegar__content">
+            <p class="section-eyebrow">Localização</p>
+            <h2 id="chegar-heading" class="section-title">
+              Venha nos visitar.
+            </h2>
+            <p class="como-chegar__desc">
+              Estamos no coração do Belvedere, aguardando você com portas
+              abertas e um sorriso no rosto.
+            </p>
+
+            <div class="info-block">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <div>
+                <strong>Endereço</strong>
+                <p>
+                  Rua Luiz Arnaldo Wenzel, 199 — Jardim Social Belvedere, São
+                  Carlos - SP
+                </p>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <i data-lucide="calendar" aria-hidden="true"></i>
+              <div>
+                <strong>Cultos</strong>
+                <p>Dom 18h30 · Ter 19h30 · Quin 19h30</p>
+              </div>
+            </div>
+
+            <div class="chegar-ctas">
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--gold btn--lg"
+              >
+                <i data-lucide="navigation" aria-hidden="true"></i>
+                Abrir no Maps
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="mapa-placeholder"
+            aria-label="Mapa de localização — substitua por embed do Google Maps"
+          >
+            <div class="mapa-placeholder__inner">
+              <i data-lucide="map" aria-hidden="true"></i>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443.80058032899217!2d-47.90298479250148!3d-22.040475235546953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b87772c2842bb9%3A0xf224e3ea517da3e7!2sIgreja%20Assembl%C3%A9ia%20De%20Deus!5e0!3m2!1spt-BR!2sbr!4v1781903048509!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
+              <p
+                style="font-size: 0.75rem; opacity: 0.5; margin-top: 0.5rem"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-heading">
+        <div class="final-cta__geo" aria-hidden="true"></div>
+        <div class="container final-cta__inner">
+          <div class="final-cta__cross" aria-hidden="true">
+            <span class="fc-cross-v"></span>
+            <span class="fc-cross-h"></span>
+          </div>
+          <h2 id="final-cta-heading" class="final-cta__title">
+            Você não<br />está sozinho.
+          </h2>
+          <p class="final-cta__subtitle">
+            Seja qual for a sua história, o Senhor Jesus tem um plano para a sua
+            vida.<br />
+            Venha descobrir esse plano com a gente.
+          </p>
+          <div class="final-cta__actions">
+            <a href="#cultos" class="btn btn--gold btn--lg">
+              Ver próximos cultos
+              <i data-lucide="calendar" aria-hidden="true"></i>
+            </a>
+            <a href="#como-chegar" class="btn btn--ghost-light btn--lg">
+              Como chegar
+            </a>
+          </div>
+          <p class="final-cta__note">
+            Entrada franca · Todos são bem-vindos · Sem compromisso
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a
+              href="#"
+              class="nav__logo footer__logo"
+              aria-label="AD Brás Belvedere"
+            >
+              <div class="footer-logo-img">
+                <img src="assets/img/logo.png" alt="Logo AD Brás Belvedere" />
+              </div>
+              <div class="logo-text">
+                <span class="logo-text__main">AD Brás</span>
+                <span class="logo-text__sub">Belvedere</span>
+              </div>
+            </a>
+            <p>
+              Uma Igreja Família que ama a Jesus.
+            </p>
+            <div class="footer__social" aria-label="Redes sociais">
+              <a
+                href="https://www.instagram.com/adbras_belvedere/"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100090555102234"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <nav aria-label="Links da igreja">
+            <p class="footer__col-title">Igreja</p>
+            <ul role="list">
+              <li><a href="#cultos">Programação</a></li>
+              <li><a href="#ministerios">Ministérios</a></li>
+              <li><a href="#testemunhos">Experiências Reais</a></li>
+              <li><a href="#como-chegar">Localização</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Links de contato">
+            <p class="footer__col-title">Contato</p>
+            <ul role="list">
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/e38VDN5eCeZ26H266"
+                  target="_blank"
+                  rel="noopener"
+                  >Google Maps</a
+                >
+              </li>
+              <li>
+                <a href="https://adbras.com.br" target="_blank" rel="noopener"
+                  >Sede — AD Brás</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <p class="footer__col-title">Horários</p>
+            <ul role="list" class="footer__horarios">
+              <li><span>Domingo</span><span>18h30</span></li>
+              <li><span>Terça</span><span>19h30</span></li>
+              <li><span>Quinta</span><span>19h30</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            © 2026 AD Brás Belvedere — Assembleia de Deus · Ministério de
+            Madureira
+          </p>
+          <p>
+            Sede:
+            <a
+              href="https://adbras.com.br"
+              target="_blank"
+              rel="noopener"
+              style="color: rgba(255, 255, 255, 0.4)"
+              >adbras.com.br</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

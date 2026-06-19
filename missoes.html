@@ -1,184 +1,546 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Missões e Evangelismo | AD Brás Belvedere</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
-  </head>
-  <body>
-    <nav class="navbar relative">
-      <div class="container navbar-content">
-        <a href="index.html" class="logo">
-          <img src="assets/img/logo.png" alt="logo" style="width: 50px" />
-          <span>AD Brás Belvedere</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missões e Evangelismo | AD Brás Belvedere</title>
+  <meta name="description" content="Conheça o trabalho de missões e evangelismo da AD Brás Belvedere. Seja um voluntário e faça parte dessa história.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/missoes.css">
+</head>
+<body class="page-missoes">
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Navegação principal">
+
+      <a href="index.html" class="nav__logo" aria-label="AD Brás Belvedere — Início">
+        <div class="logo-emblem" aria-hidden="true">
+          <span class="cross-v"></span>
+          <span class="cross-h"></span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-text__main">AD Brás</span>
+          <span class="logo-text__sub">Belvedere</span>
+        </div>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#cultos"      class="nav__link">Cultos</a></li>
+        <li><a href="index.html#ministerios" class="nav__link">Ministérios</a></li>
+        <li><a href="index.html#palavra"     class="nav__link">Palavra</a></li>
+        <li><a href="missoes.html"           class="nav__link nav__link--active" aria-current="page">Missões</a></li>
+        <li><a href="index.html#como-chegar" class="nav__link">Como chegar</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#faca-parte" class="btn btn--gold btn--sm">
+          <i data-lucide="heart" aria-hidden="true"></i>
+          Ser voluntário
         </a>
-
-        <button
-          class="mobile-menu-btn"
-          id="mobile-menu-btn"
-          aria-label="Abrir Menu"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html#inicio">Início</a></li>
-          <li><a href="index.html#sobre">Sobre</a></li>
-          <li><a href="index.html#agenda">Agenda</a></li>
-          <li><a href="missoes.html" class="active">Missões</a></li>
-          <li><a href="index.html#galeria">Galeria</a></li>
-          <li><a href="index.html#contato">Contato</a></li>
-        </ul>
       </div>
+
+      <button
+        class="nav__toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Abrir menu"
+      >
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
     </nav>
 
-    <!-- Header de Missões -->
-    <header class="missions-header">
-      <div class="missions-header-content">
-        <h1>Missões e Evangelismo</h1>
-        <p>
-          Levando a luz e a Esperança de Cristo aos confins da Terra e às
-          famílias da nossa comunidade.
-        </p>
-      </div>
-    </header>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação" hidden>
+      <ul class="mobile-menu__links" role="list">
+        <li><a href="index.html#cultos"      class="mobile-menu__link">Cultos</a></li>
+        <li><a href="index.html#ministerios" class="mobile-menu__link">Ministérios</a></li>
+        <li><a href="index.html#palavra"     class="mobile-menu__link">Palavra</a></li>
+        <li><a href="missoes.html"           class="mobile-menu__link">Missões</a></li>
+        <li><a href="index.html#como-chegar" class="mobile-menu__link">Como chegar</a></li>
+        <li>
+          <a href="#faca-parte" class="btn btn--gold w-full">
+            <i data-lucide="heart" aria-hidden="true"></i>
+            Ser voluntário
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- Nossa Visão -->
-    <section class="features" style="padding-bottom: 2rem">
-      <div class="container text-center">
-        <h2 class="section-title">Nossa Visão</h2>
-        <p class="section-subtitle">
-          Acreditamos que a igreja tem a principal missão de espalhar o
-          Evangelho. Nosso objetivo é ser uma igreja em movimento, servindo os
-          necessitados e levando a reconciliação.
-        </p>
+  <main>
+    <section class="m-hero" aria-labelledby="m-hero-heading">
+      <div class="m-hero__bg" aria-hidden="true">
+        <!--
+          ✏️ ADAPTE: Cole aqui um <video> igual ao index, ou deixe o fundo
+          degradê. Para usar imagem estática, adicione ao CSS:
+          .m-hero__bg { background-image: url('assets/img/missoes.jpg'); }
+        -->
+        <div class="m-hero__overlay"></div>
+        <div class="m-hero__vignette"></div>
       </div>
+
+      <div class="hero__bg-texture" aria-hidden="true"></div>
+
+      <div class="container m-hero__inner">
+
+        <nav class="breadcrumb" aria-label="Localização na página">
+          <a href="index.html">Início</a>
+          <i data-lucide="chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Missões</span>
+        </nav>
+
+        <div class="m-hero__content">
+          <p class="hero__verse-ref">Mateus 28:19</p>
+
+          <h1 id="m-hero-heading" class="m-hero__title">
+            Ide e fazei<br>
+            <em>discípulos</em><br>
+            de todas as nações.
+          </h1>
+
+          <p class="m-hero__subtitle">
+            Não somos apenas uma congregação local — somos um povo em missão.<br>
+            Levando esperança às ruas, famílias e nações.
+          </p>
+
+          <div class="m-hero__ctas">
+            <a href="#faca-parte" class="btn btn--gold btn--lg">
+              Quero ser voluntário
+              <i data-lucide="heart" aria-hidden="true"></i>
+            </a>
+            <a href="#frentes" class="btn btn--ghost btn--lg">
+              Ver como atuamos
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <aside class="m-hero__impact" aria-label="Números do nosso impacto">
+          <div class="impact-card">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <strong>Local</strong>
+            <span>Bairros e ruas alcançados todo mês</span>
+          </div>
+          <div class="impact-card impact-card--gold">
+            <i data-lucide="globe-2" aria-hidden="true"></i>
+            <strong>Global</strong>
+            <span>Apoio a missionários no Brasil e exterior</span>
+          </div>
+          <div class="impact-card">
+            <i data-lucide="users" aria-hidden="true"></i>
+            <strong>Comunitário</strong>
+            <span>Doações e ações sociais regulares</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- Formulário de Envolvimento -->
-    <section
-      id="faca-parte"
-      style="padding: 4rem 0; background: var(--bg-color)"
-    >
-      <div class="container">
-        <div
-          class="feature-card"
-          style="max-width: 650px; margin: 0 auto; text-align: left"
-        >
-          <div class="text-center" style="margin-bottom: 2.5rem">
-            <i
-              class="fas fa-heart-circle-check"
-              style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem"
-            ></i>
-            <h3 style="font-size: 2rem">Seja um Voluntário</h3>
-            <p>
-              Preencha os campos abaixo e entraremos em contato via WhatsApp.
-            </p>
-          </div>
+    <section class="m-visao" aria-labelledby="visao-heading">
+      <div class="container m-visao__inner">
 
-          <form
-            id="form-whatsapp-missoes"
-            style="display: flex; flex-direction: column; gap: 1.2rem"
-          >
-            <div>
-              <label
-                style="display: block; margin-bottom: 5px; font-weight: 600"
-                >Seu Nome:</label
-              >
-              <input
-                type="text"
-                id="nome"
-                placeholder="Nome completo"
-                required
-                style="
-                  width: 100%;
-                  padding: 12px;
-                  border-radius: 8px;
-                  border: 1px solid var(--border-color);
-                "
-              />
-            </div>
+        <div class="m-visao__verse" aria-label="Versículo âncora">
+          <span class="m-visao__quote-mark" aria-hidden="true">"</span>
+          <blockquote>
+            <p>Como são belos os pés dos que anunciam coisas boas!</p>
+            <cite>Romanos 10:15</cite>
+          </blockquote>
+        </div>
 
-            <div>
-              <label
-                style="display: block; margin-bottom: 5px; font-weight: 600"
-                >Área de Interesse:</label
-              >
-              <select
-                id="interesse"
-                required
-                style="
-                  width: 100%;
-                  padding: 12px;
-                  border-radius: 8px;
-                  border: 1px solid var(--border-color);
-                  background: white;
-                "
-              >
-                <option value="">Selecione...</option>
-                <option value="Evangelismo Local">
-                  Evangelismo Local (Ruas/Praças)
-                </option>
-                <option value="Ajuda Comunitária">
-                  Ajuda Comunitária (Doações)
-                </option>
-                <option value="Intercessão">
-                  Intercessão (Oração por missões)
-                </option>
-              </select>
-            </div>
-
-            <div>
-              <label
-                style="display: block; margin-bottom: 5px; font-weight: 600"
-                >Mensagem Adicional:</label
-              >
-              <textarea
-                id="mensagem"
-                rows="3"
-                placeholder="Como você gostaria de contribuir?"
-                style="
-                  width: 100%;
-                  padding: 12px;
-                  border-radius: 8px;
-                  border: 1px solid var(--border-color);
-                  resize: none;
-                "
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="btn btn-primary"
-              style="width: 100%; margin-top: 10px"
-            >
-              <i class="fab fa-whatsapp"></i> Enviar Solicitação
-            </button>
-          </form>
+        <div class="m-visao__texto">
+          <p class="section-eyebrow">Nossa Visão</p>
+          <h2 id="visao-heading" class="section-title" style="text-align:left;">
+            A missão da Igreja<br>é levar o Evangelho.
+          </h2>
+          <p>
+            Acreditamos que evangelismo não é uma atividade especial — é o estilo de vida do cristão. Por isso, a AD Brás Belvedere investe em frentes de atuação que cobrem desde a rua ao lado até povos não alcançados pelo mundo.
+          </p>
+          <p>
+            Cada membro é um missionário. Cada ação é um ato de obediência. Cada vida transformada é a prova de que Deus ainda está em movimento.
+          </p>
+          <a href="#faca-parte" class="btn btn--gold" style="margin-top:var(--s6);">
+            Faça parte dessa história
+            <i data-lucide="arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container text-center">
-        <p class="copyright">
-          &copy; 2026 AD Brás Belvedere. Todos os direitos reservados.
+    <section class="m-frentes" id="frentes" aria-labelledby="frentes-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Como atuamos</p>
+          <h2 id="frentes-heading" class="section-title">
+            Três frentes,<br>um único propósito.
+          </h2>
+          <p class="section-subtitle">
+            Cada frente tem uma estratégia diferente, mas todas apontam para a mesma direção: levar Cristo a quem ainda não O conhece.
+          </p>
+        </div>
+
+        <div class="m-frentes__grid">
+
+          <article class="frente-card" aria-labelledby="frente-1">
+            <div class="frente-card__number" aria-hidden="true">01</div>
+            <div class="frente-card__icon" aria-hidden="true">
+              <i data-lucide="megaphone"></i>
+            </div>
+            <h3 id="frente-1" class="frente-card__title">Evangelismo de Rua</h3>
+            <p class="frente-card__desc">
+              Saímos regularmente para praças, bairros e espaços públicos com música, testemunhos e distribuição de Bíblias. Cada saída é uma oportunidade de plantar uma semente.
+            </p>
+            <ul class="frente-card__list" role="list">
+              <li><i data-lucide="check" aria-hidden="true"></i> Saídas mensais programadas</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Equipes de oração in loco</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Distribuição de Bíblias e materiais</li>
+            </ul>
+            <div class="frente-card__cta">
+              <a href="#faca-parte" class="btn btn--outline">Quero participar</a>
+            </div>
+          </article>
+
+          <article class="frente-card frente-card--destaque" aria-labelledby="frente-2">
+            <div class="frente-card__badge">Principal frente</div>
+            <div class="frente-card__number" aria-hidden="true">02</div>
+            <div class="frente-card__icon" aria-hidden="true">
+              <i data-lucide="hand-heart"></i>
+            </div>
+            <h3 id="frente-2" class="frente-card__title">Ação Social e Comunitária</h3>
+            <p class="frente-card__desc">
+              O amor precisa ser concreto. Organizamos campanhas de doação, distribuição de cestas básicas, roupas e atendimento a famílias em vulnerabilidade no entorno da congregação.
+            </p>
+            <ul class="frente-card__list" role="list">
+              <li><i data-lucide="check" aria-hidden="true"></i> Campanhas de arrecadação</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Distribuição de cestas básicas</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Apoio a famílias em vulnerabilidade</li>
+            </ul>
+            <div class="frente-card__cta">
+              <a href="#faca-parte" class="btn btn--gold">Quero participar</a>
+            </div>
+          </article>
+
+          <article class="frente-card" aria-labelledby="frente-3">
+            <div class="frente-card__number" aria-hidden="true">03</div>
+            <div class="frente-card__icon" aria-hidden="true">
+              <i data-lucide="globe-2"></i>
+            </div>
+            <h3 id="frente-3" class="frente-card__title">Intercessão por Missões</h3>
+            <p class="frente-card__desc">
+              Nenhum missionário vai longe sem o suporte espiritual da Igreja que ora. Temos uma rede de intercessores que ora regularmente por missionários apoiados pela congregação.
+            </p>
+            <ul class="frente-card__list" role="list">
+              <li><i data-lucide="check" aria-hidden="true"></i> Grupo de oração semanal por missões</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Apoio financeiro a missionários</li>
+              <li><i data-lucide="check" aria-hidden="true"></i> Comunicação com campo missionário</li>
+            </ul>
+            <div class="frente-card__cta">
+              <a href="#faca-parte" class="btn btn--outline">Quero participar</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="m-impacto" aria-labelledby="impacto-heading">
+      <div class="m-impacto__bg" aria-hidden="true"></div>
+      <div class="container m-impacto__inner">
+
+        <div class="section-header" style="margin-bottom:var(--s12);">
+          <p class="section-eyebrow" style="color:var(--gold-400)">Impacto</p>
+          <h2 id="impacto-heading" class="section-title" style="color:var(--text-primary);">
+            O que Deus tem feito<br>através de nós.
+          </h2>
+        </div>
+
+        <div class="m-impacto__grid">
+          <div class="impacto-item">
+            <i data-lucide="bible" aria-hidden="true"></i>
+            <strong>+200</strong>
+            <span>Bíblias distribuídas por ano</span>
+          </div>
+          <div class="impacto-item">
+            <i data-lucide="users" aria-hidden="true"></i>
+            <strong>+50</strong>
+            <span>Famílias atendidas por ação social</span>
+          </div>
+          <div class="impacto-item impacto-item--destaque">
+            <i data-lucide="heart" aria-hidden="true"></i>
+            <strong>12+</strong>
+            <span>Anos de atuação missional contínua</span>
+          </div>
+          <div class="impacto-item">
+            <i data-lucide="globe-2" aria-hidden="true"></i>
+            <strong>3</strong>
+            <span>Missionários apoiados no campo</span>
+          </div>
+          <div class="impacto-item">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <strong>8+</strong>
+            <span>Bairros alcançados por evangelismo</span>
+          </div>
+        </div>
+
+        <p class="m-impacto__disclaimer">
+          Adapte esses números com os dados reais da congregação.
         </p>
       </div>
-    </footer>
+    </section>
 
-    <script src="js/scripts.js"></script>
-  </body>
+    <section class="m-form" id="faca-parte" aria-labelledby="form-heading">
+      <div class="container m-form__inner">
+
+        <div class="m-form__context">
+          <p class="section-eyebrow">Seja voluntário</p>
+          <h2 id="form-heading" class="section-title" style="text-align:left;">
+            Sua vida pode<br>mudar a de alguém.
+          </h2>
+          <p>
+            Não é preciso ter experiência. É preciso ter disposição. Preencha o formulário ao lado — nossa equipe entrará em contato via WhatsApp para apresentar as próximas etapas.
+          </p>
+
+          <div class="m-form__depoimento">
+            <div class="testemunho-avatar av1" aria-hidden="true">PS</div>
+            <blockquote>
+              <p>"Entrei para o evangelismo sem saber pregar. Fui só com o coração. Deus fez o resto — e eu nunca mais fui o mesmo."</p>
+              <cite>— Paulo S., voluntário desde 2019</cite>
+            </blockquote>
+          </div>
+
+          <div class="m-form__steps">
+            <div class="form-step">
+              <span class="form-step__num">1</span>
+              <div>
+                <strong>Preencha o formulário</strong>
+                <p>Escolha a frente de atuação que mais combina com você.</p>
+              </div>
+            </div>
+            <div class="form-step">
+              <span class="form-step__num">2</span>
+              <div>
+                <strong>Receba o contato</strong>
+                <p>Nossa equipe fala com você pelo WhatsApp em até 48h.</p>
+              </div>
+            </div>
+            <div class="form-step">
+              <span class="form-step__num">3</span>
+              <div>
+                <strong>Participe da próxima ação</strong>
+                <p>Você já entra na programação da próxima saída ou ação.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-form__card">
+          <div class="m-form__card-header">
+            <div class="m-form__card-icon" aria-hidden="true">
+              <i data-lucide="heart-handshake"></i>
+            </div>
+            <h3>Cadastro de Voluntário</h3>
+            <p>Envio direto para o WhatsApp da nossa equipe de missões.</p>
+          </div>
+
+          <form id="form-whatsapp-missoes" class="m-form__fields" novalidate>
+
+            <div class="field-group">
+              <label for="nome" class="field-label">
+                <i data-lucide="user" aria-hidden="true"></i>
+                Seu nome completo
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="field-input"
+                placeholder="Como podemos te chamar?"
+                required
+                autocomplete="name"
+              />
+              <span class="field-error" role="alert" hidden>Por favor, informe seu nome.</span>
+            </div>
+
+            <div class="field-group">
+              <label for="whatsapp" class="field-label">
+                <i data-lucide="smartphone" aria-hidden="true"></i>
+                Seu WhatsApp
+              </label>
+              <input
+                type="tel"
+                id="whatsapp"
+                name="whatsapp"
+                class="field-input"
+                placeholder="(DDD) 9 0000-0000"
+                required
+                autocomplete="tel"
+              />
+              <span class="field-error" role="alert" hidden>Por favor, informe seu WhatsApp.</span>
+            </div>
+
+            <div class="field-group">
+              <label for="interesse" class="field-label">
+                <i data-lucide="target" aria-hidden="true"></i>
+                Área de interesse
+              </label>
+              <div class="field-select-wrapper">
+                <select id="interesse" name="interesse" class="field-input field-select" required>
+                  <option value="">Selecione uma frente...</option>
+                  <option value="Evangelismo de Rua">📣 Evangelismo de Rua (Praças e Bairros)</option>
+                  <option value="Ação Social">🤝 Ação Social e Comunitária (Doações)</option>
+                  <option value="Intercessão por Missões">🙏 Intercessão por Missões (Oração)</option>
+                  <option value="Todas as frentes">✨ Todas as frentes — quero ajudar no que precisar</option>
+                </select>
+                <i data-lucide="chevron-down" class="select-arrow" aria-hidden="true"></i>
+              </div>
+              <span class="field-error" role="alert" hidden>Por favor, escolha uma área.</span>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">
+                <i data-lucide="calendar" aria-hidden="true"></i>
+                Disponibilidade
+              </label>
+              <div class="field-chips" role="group" aria-label="Dias disponíveis">
+                <label class="chip">
+                  <input type="checkbox" name="disponibilidade" value="Fins de semana">
+                  <span>Fins de semana</span>
+                </label>
+                <label class="chip">
+                  <input type="checkbox" name="disponibilidade" value="Noites de semana">
+                  <span>Noites de semana</span>
+                </label>
+                <label class="chip">
+                  <input type="checkbox" name="disponibilidade" value="Horário comercial">
+                  <span>Horário comercial</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="mensagem" class="field-label">
+                <i data-lucide="message-square" aria-hidden="true"></i>
+                Mensagem <span style="opacity:.5;font-weight:400">(opcional)</span>
+              </label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="field-input field-textarea"
+                rows="3"
+                placeholder="Conte um pouco sobre você ou como quer contribuir..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--gold w-full m-form__submit">
+              <i data-lucide="send" aria-hidden="true"></i>
+              Enviar para o WhatsApp
+            </button>
+
+            <p class="m-form__privacy">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              Seus dados são usados apenas para contato da equipe de missões.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-cta-m-heading">
+      <div class="final-cta__geo" aria-hidden="true"></div>
+      <div class="container final-cta__inner">
+        <div class="final-cta__cross" aria-hidden="true">
+          <span class="fc-cross-v"></span>
+          <span class="fc-cross-h"></span>
+        </div>
+        <h2 id="final-cta-m-heading" class="final-cta__title">
+          O mundo está<br>esperando por você.
+        </h2>
+        <p class="final-cta__subtitle">
+          Deus não chama os capacitados — Ele capacita os chamados.<br>
+          Dê o primeiro passo hoje.
+        </p>
+        <div class="final-cta__actions">
+          <a href="#faca-parte" class="btn btn--gold btn--lg">
+            Quero ser voluntário
+            <i data-lucide="heart" aria-hidden="true"></i>
+          </a>
+          <a href="index.html" class="btn btn--ghost-light btn--lg">
+            Voltar ao início
+          </a>
+        </div>
+        <p class="final-cta__note">Sem compromisso · Qualquer pessoa pode participar</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo footer__logo" aria-label="AD Brás Belvedere">
+            <div class="logo-emblem logo-emblem--sm" aria-hidden="true">
+              <span class="cross-v"></span>
+              <span class="cross-h"></span>
+            </div>
+            <div class="logo-text">
+              <span class="logo-text__main">AD Brás</span>
+              <span class="logo-text__sub">Belvedere</span>
+            </div>
+          </a>
+          <p>Uma Igreja Família que ama a Jesus e leva Deus a sério — Ministério de Madureira.</p>
+          <div class="footer__social" aria-label="Redes sociais">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav aria-label="Links da igreja">
+          <p class="footer__col-title">Igreja</p>
+          <ul role="list">
+            <li><a href="index.html#cultos">Programação</a></li>
+            <li><a href="index.html#ministerios">Ministérios</a></li>
+            <li><a href="index.html#testemunhos">Testemunhos</a></li>
+            <li><a href="missoes.html">Missões</a></li>
+            <li><a href="index.html#como-chegar">Localização</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Links de contato">
+          <p class="footer__col-title">Contato</p>
+          <ul role="list">
+            <li><a href="https://wa.me/5516994274398" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:adbrasbelvdere@email.com">E-mail</a></li>
+            <li><a href="https://maps.google.com" target="_blank" rel="noopener">Google Maps</a></li>
+            <li><a href="https://adbras.com.br" target="_blank" rel="noopener">Sede — AD Brás</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="footer__col-title">Horários</p>
+          <ul role="list" class="footer__horarios">
+            <li><span>Domingo</span><span>17h45</span></li>
+            <li><span>Segunda</span><span>19h15</span></li>
+            <li><span>Quarta</span><span>19h30</span></li>
+            <li><span>Sexta</span><span>19h30</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 AD Brás Belvedere — Assembleia de Deus · Ministério de Madureira</p>
+        <p>Sede: <a href="https://adbras.com.br" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4)">adbras.com.br</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/missoes.js"></script>
+</body>
 </html>
